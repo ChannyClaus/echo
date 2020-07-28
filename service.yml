@@ -1,6 +1,57 @@
-accessibility: public
-containerPort: 80
+accessibility: protected
 autoscale: enabled
+awsRegion: us-east-1
+buildMode: deploy-skip-build
+cluster: sandbox
+clusterName: test.k8s.centrio.com
+containerImage: registry.test.k8s.centrio.com/test:c8aa75a8
+containerPort: '80'
+cpuThreshold: '60'
+deployID: dr4x6cqz
+deployedAt: '2020-07-28T15:14:28.100071Z'
+deployedBy: user:michaelt
+deploymentStrategy: ''
+disallowDeploy: false
+dockerRegistry: registry.test.k8s.centrio.com
+dockerTag: c8aa75a8
+dockerfile: Dockerfile
+fileMountPath: /var/secrets
+fqdn: test.test.k8s.centrio.com
+gitRef: mt/istio
+gitRefHash: c8aa75a8
+gitRemote: http://github.com/mat285/echo.git
+istio:
+  egressHosts: null
+  enabled: true
+  gateway:
+    resources:
+      limits:
+        cpu: 20m
+        memory: 64Mi
+      requests:
+        cpu: 20m
+        memory: 64Mi
+  sidecar: {}
+kubectlConfig: /Users/chankang/.kube/config
+maxReplicas: '10'
+minReplicas: '2'
+namespace: blend
+protocol: HTTP
+registryHost: registry.test.k8s.centrio.com
+replicas: '2'
+resources:
+  limits:
+    cpu: 20m
+    memory: 64Mi
+  requests:
+    cpu: 20m
+    memory: 64Mi
+restartPolicy: Always
+schemaVersion: 1.0.0
+serviceConfigPath: service.yml
+serviceEnv: sandbox
+serviceName: test
+serviceType: deployment
 extraSecurityGroups:
-        - sg-f921e894
-        - sg-d7891bba
+    - sg-f921e894
+    - sg-d7891bba
