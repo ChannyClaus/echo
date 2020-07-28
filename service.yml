@@ -1,7 +1,6 @@
 accessibility: protected
 autoscale: enabled
 awsRegion: us-east-1
-buildMode: deploy-skip-build
 cluster: sandbox
 clusterName: test.k8s.centrio.com
 containerImage: registry.test.k8s.centrio.com/test:c8aa75a8
