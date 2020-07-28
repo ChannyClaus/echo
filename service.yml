@@ -1,3 +1,6 @@
 accessibility: public
 containerPort: 80
 autoscale: enabled
+extraSecurityGroups:
+        - sg-f921e894
+        - sg-d7891bba
